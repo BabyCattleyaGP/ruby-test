@@ -1,6 +1,6 @@
-require 'practice_data_type'
+require 'introduction'
 
-describe PracticeDataType do
+describe Introduction do
   context 'when add num data' do
     it 'displays num' do
       expect(subject.trynum(23)).to eq(23)
