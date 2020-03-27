@@ -13,24 +13,21 @@ class Introduction
 end
 
 c = Introduction.new
+print "What's your string? "
+input_string = gets.chomp
+string = c.trystring(input_string)
+num = c.trynum(23)
 
 puts 'Output From Function: '
-puts c.trystring('Ada')
-puts c.trynum(23)
+puts string
+puts num
 puts c.tryboolean(true)
 
 puts
-puts 'Try Ruby Method for String : Gola'
-print 'String length : '  
-puts c.trystring('GoLa').length
-print 'Reverse string : ' 
-puts c.trystring('GoLa').reverse
-print 'Upcase : ' 
-puts c.trystring('GoLa').upcase
-print 'Downcase : ' 
-puts c.trystring('GoLa').downcase
-print 'Down-Up-Reverse : ' 
-puts c.trystring('GoLa').downcase.upcase.reverse
+puts "Try Ruby Method for String : #{string}"
+puts "String length : #{string.length}, reverse : #{string.reverse}"
+puts "Upcase : #{string.upcase}, downcase : #{string.downcase}"
+puts "Down-Up-Reverse : #{string.downcase.upcase.reverse}"
 
 puts
 puts 'Try Ruby Math Method :'
